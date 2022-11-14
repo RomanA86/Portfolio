@@ -160,7 +160,7 @@ nav {
 #btn-menu:checked ~ .label-menu #span-1 {
   transform: rotate(140deg);
   top: 10px;
-  background-color: red;
+  background-color: var(--red);
 }
 
 #btn-menu:checked ~ .label-menu #span-2 {
@@ -170,7 +170,7 @@ nav {
 #btn-menu:checked ~ .label-menu #span-3 {
   transform: rotate(-140deg);
   top: 10px;
-  background-color: red;
+  background-color: var(--red);
 }
 
 /* NAVBAR ----------------------------------------------------- */
@@ -197,7 +197,7 @@ nav {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: -1;
+  z-index: -50;
   width: 60vw;
 }
 
@@ -234,7 +234,7 @@ nav {
   color: var(--primario);
   overflow: hidden;
   transition: color 250ms ease-in-out;
-  box-shadow: 5px 5px 10px 10px solid white;
+
 }
 
 .btn-CV::after{
@@ -245,7 +245,7 @@ nav {
   width: 100%;
   height: 100%;
   background-color: var(--primario);
-  z-index: -1;
+  z-index: -10;
   clip-path: circle(0 at 100% 0);
   transition: clip-path 250ms ease-in-out;
 }
@@ -268,15 +268,6 @@ nav {
 .home-btns{
   display: flex;
   gap: 15px;
-}
-
-.home-btns a img{
-  opacity: 0.75;
-  transition: opacity 200ms ease-in;
-}
-
-.home-btns a img:hover{
-  opacity: 1;
 }
 
 .container-code {
@@ -371,7 +362,7 @@ nav {
     justify-content: space-evenly;
     overflow: hidden;
     transition: all 200ms ease-in;
-    z-index: 10;
+
   }
 
   .nav-links li a {
