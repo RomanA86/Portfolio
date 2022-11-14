@@ -198,27 +198,63 @@ nav {
 }
 
 .home-txt {
-  font-size: 40px;
   color: var(--letras);
+}
+
+.home-txt .name{
+  font-size: 140px;
 }
 
 .home-txt p {
   font-size: 25px;
+  padding-left: 10px;
 }
 
 .home-txt .rol {
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
-.home-txt .CV {
-  font-size: 1rem;
-  padding: 10px 20px;
-  border-radius: 20px;
+.home-btns{
+
+}
+
+.home-txt .btn-CV {
+  position: relative;
+  font-size: 20px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 22px;
   cursor: pointer;
-  border: solid 2px var(--primario);
+  outline: solid 2px var(--primario);
+  outline-offset: -1px;
   background-color: transparent;
   color: var(--primario);
+  overflow: hidden;
+  transition: color 250ms ease-in-out;
 }
+
+.btn-CV::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primario);
+  z-index: -1;
+  clip-path: circle(0 at 100% 0);
+  transition: clip-path 250ms ease-in-out;
+}
+
+.btn-CV:hover::after{
+  clip-path: circle(100%);
+}
+
+.btn-CV:hover{
+  color: var(--letras);
+}
+
 
 .container-code {
   background-color: var(--fondo-navbar);
