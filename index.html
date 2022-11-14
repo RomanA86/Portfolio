@@ -14,8 +14,9 @@
     <title>Dark mode</title>
   </head>
   <body>
-    <nav>
 
+    <nav>
+      <div class="nav-container">
       <div class="flags" id="flags">
         <div class="flags__item" data-language="es">
           <img src="./assets/flag-arg.svg" class="flags__img" />
@@ -41,10 +42,10 @@
           <img src="./assets/bxs-sun.svg" id="icon-light-mode" />
         </li>
       </ul>
-
+      </div>
     </nav>
 
-    <main>
+    <section class="home">
       <div class="home-txt">
         <p data-section="home" data-value="hi">Hello i'm</p>
         <h1>Román</h1>
@@ -68,7 +69,7 @@
 </pre>
       </div>
       <img src="./assets/ola.svg" class="ola" />
-    </main>
+    </section>
 
     <script src="app.js"></script>
   </body>
