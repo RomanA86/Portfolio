@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
     <title>Dark mode</title>
   </head>
@@ -52,14 +48,26 @@
       <div class="home-container">
         <div class="home-txt">
           <p data-section="home" data-value="hi" class="hi">Hello i'm</p>
-          <h1 class="name">Román</h1>
+          <h1 class="name">Román<i class="fa-brands fa-github"></i></h1>
           <p data-section="home" data-value="rol" class="rol">
             CREATIVE WEB DEVELOPER
           </p>
-          <!-- <div class="home-btns">
-            
-          </div> -->
-          <button class="btn-CV" data-section="home" data-value="cv">Resumé</button>
+          <div class="home-btns-container">
+            <button class="btn-CV" data-section="home" data-value="cv">
+              Resumé
+            </button>
+            <div class="home-btns">
+              <a href="#" >
+                <img  src="./assets/linkedin.svg"/>
+              </a>
+              <a href="#">
+                <img src="./assets/git.svg" />
+              </a>
+              <a href="#">
+                <img src="./assets/gmail.svg" />
+              </a>
+            </div>
+          </div>
         </div>
 
         <div class="container-code">
