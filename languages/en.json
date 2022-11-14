@@ -1,0 +1,23 @@
+{
+    "nav":{
+        "home": "home",
+        "about": "about",
+        "proyects": "proyects",
+        "contact": "contact"
+    },
+    "home":{
+       "hi": "Hello I'm",
+       "rol": "frontend web developer +<br>systems engineering student",
+       "cv" : "Resumé"
+    },
+    "code-block":{
+        "id": "\"person\"",
+        "name": "\"name\"",
+        "age": "\"age\"",
+        "location": "\"location\"",
+        "likes": "\"likes\"",
+        "like-1": "Swimming",
+        "like-2": "Coding",
+        "like-3": "Web Design"
+    }
+}
