@@ -14,47 +14,53 @@
     <title>Dark mode</title>
   </head>
   <body>
-
     <nav>
       <div class="nav-container">
-      <div class="flags" id="flags">
-        <div class="flags__item" data-language="es">
-          <img src="./assets/flag-arg.svg" class="flags__img" />
+        <div class="flags" id="flags">
+          <div class="flags__item" data-language="es">
+            <img src="./assets/flag-arg.svg" class="flags__img" />
+          </div>
+          <div class="flags__item" data-language="en">
+            <img src="./assets/flag-gb.svg" class="flags__img" />
+          </div>
         </div>
-        <div class="flags__item" data-language="en">
-          <img src="./assets/flag-gb.svg" class="flags__img" />
-        </div>
-      </div>
 
-      <input type="checkbox" id="btn-menu">
-      <label for="btn-menu" class="label-menu">
+        <input type="checkbox" id="btn-menu" />
+        <label for="btn-menu" class="label-menu">
           <span id="span-1"></span>
           <span id="span-2"></span>
           <span id="span-3"></span>
-      </label>
+        </label>
 
-      <ul class="nav-links">
-        <li><a href="#" data-section="nav" data-value="home">Home</a></li>
-        <li><a href="#" data-section="nav" data-value="about">About</a></li>
-        <li><a href="#" data-section="nav" data-value="proyects">Proyects</a></li>
-        <li><a href="#" data-section="nav" data-value="contact">Contact</a></li>
-        <li class="icon-light-container">
-          <img src="./assets/bxs-sun.svg" id="icon-light-mode" />
-        </li>
-      </ul>
+        <ul class="nav-links">
+          <li><a href="#" data-section="nav" data-value="home">Home</a></li>
+          <li><a href="#" data-section="nav" data-value="about">About</a></li>
+          <li>
+            <a href="#" data-section="nav" data-value="proyects">Proyects</a>
+          </li>
+          <li>
+            <a href="#" data-section="nav" data-value="contact">Contact</a>
+          </li>
+          <li class="icon-light-container">
+            <img src="./assets/bxs-sun.svg" id="icon-light-mode" />
+          </li>
+        </ul>
       </div>
     </nav>
 
     <section class="home">
-      <div class="home-txt">
-        <p data-section="home" data-value="hi">Hello i'm</p>
-        <h1>Román</h1>
-        <p data-section="home" data-value="rol" class="rol">CREATIVE WEB DEVELOPER</p>
-        <button class="CV" data-section="home" data-value="cv">Resumé</button>
-      </div>
+      <div class="home-container">
+        <div class="home-txt">
+          <p data-section="home" data-value="hi">Hello i'm</p>
+          <h1>Román</h1>
+          <p data-section="home" data-value="rol" class="rol">
+            CREATIVE WEB DEVELOPER
+          </p>
+          <button class="CV" data-section="home" data-value="cv">Resumé</button>
+        </div>
 
-      <div class="container-code">
-<pre class="code-txt">
+        <div class="container-code">
+          <pre class="code-txt">
 &lt;<div class="tag">article</div> <div class="attr">id=</div><div class="attr-value" data-section="code-block" data-value="id">"person"</div>&gt;
       &lt;<div class="tag">h1</div> <div class="attr">class=</div><div class="attr-value" data-section="code-block" data-value="name">"name"</div>&gt;Román&lt;/<div class="tag">h1</div>&gt;
       &lt;<div class="tag">h2</div> <div class="attr">class=</div><div class="attr-value" data-section="code-block" data-value="age">"age"</div>&gt;20&lt;/<div class="tag">h2</div>&gt;
@@ -67,8 +73,9 @@
               &lt;/<div class="tag">ul</div>&gt;
 &lt;/<div class="tag">article</div>&gt;
 </pre>
+        </div>
+        <img src="./assets/ola.svg" class="ola" />
       </div>
-      <img src="./assets/ola.svg" class="ola" />
     </section>
 
     <script src="app.js"></script>

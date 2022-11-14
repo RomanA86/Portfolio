@@ -13,8 +13,8 @@
   --letras: hsl(0, 0%, 90%);
   --sombra-navbar: hsl(0, 0%, 0%, 0.3);
   --primario: #5847eb;
-  --sky-blue: #56C2E6;
-  --orange: #FF8C66;
+  --sky-blue: #56c2e6;
+  --orange: #ff8c66;
 }
 
 body {
@@ -25,8 +25,6 @@ body {
   position: relative;
   transition: all 200ms ease-out;
 }
-
-
 
 /* NAVBAR ----------------------------------------------------- */
 
@@ -54,7 +52,7 @@ nav {
   box-shadow: 0px 1px 30px var(--sombra-navbar);
 }
 
-.nav-container{
+.nav-container {
   margin: 0 auto;
   width: 95%;
   max-width: 1450px;
@@ -90,7 +88,7 @@ nav {
   cursor: pointer;
 }
 
-.nav-links li a{
+.nav-links li a {
   text-decoration: none;
   color: var(--letras);
   font-weight: 400;
@@ -99,7 +97,7 @@ nav {
   text-transform: capitalize;
 }
 
-.nav-links li a::after{
+.nav-links li a::after {
   content: "";
   position: absolute;
   transform: scaleX(0);
@@ -113,7 +111,7 @@ nav {
   transform-origin: bottom right;
 }
 
-.nav-links li a:hover::after{
+.nav-links li a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -122,7 +120,7 @@ nav {
   height: 24px;
 }
 
-.label-menu{
+.label-menu {
   display: none;
   width: 40px;
   height: 25px;
@@ -131,39 +129,41 @@ nav {
   /* outline: 2px solid; */
 }
 
-#span-1,#span-2,#span-3{
+#span-1,
+#span-2,
+#span-3 {
   background-color: var(--letras);
   position: absolute;
-  content: '';
+  content: "";
   width: 40px;
   height: 5px;
   border-radius: 5px;
   transition: all 500ms ease;
 }
 
-#span-2{
+#span-2 {
   top: 11px;
 }
 
-#span-3{
+#span-3 {
   top: 22px;
 }
 
-#btn-menu{
+#btn-menu {
   display: none;
 }
 
-#btn-menu:checked ~ .label-menu #span-1{
+#btn-menu:checked ~ .label-menu #span-1 {
   transform: rotate(140deg);
   top: 10px;
   background-color: red;
 }
 
-#btn-menu:checked ~ .label-menu #span-2{
+#btn-menu:checked ~ .label-menu #span-2 {
   transform: scaleX(0);
 }
 
-#btn-menu:checked ~ .label-menu #span-3{
+#btn-menu:checked ~ .label-menu #span-3 {
   transform: rotate(-140deg);
   top: 10px;
   background-color: red;
@@ -171,18 +171,22 @@ nav {
 
 /* NAVBAR ----------------------------------------------------- */
 
-
 /* HOME ------------------------------------------------------- */
 
 .home {
   width: 100%;
+  /* border: solid white 2px; */
+}
+
+.home-container {
+  max-width: 1500px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  min-height: calc(100vh - 74px);
   gap: 50px;
-  /* border: solid white 2px; */
+  min-height: calc(100vh - 74px);
+  margin: 0 auto;
 }
 
 .ola {
@@ -216,50 +220,53 @@ nav {
   color: var(--primario);
 }
 
-.container-code{
+.container-code {
   background-color: var(--fondo-navbar);
   border-radius: 35px;
   padding: 25px 50px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25),inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25),
+    inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.code-txt{
+.code-txt {
   font-size: 18px;
   line-height: 1.5;
   color: var(--letras);
   font-weight: 400;
 }
 
-.tag,.attr,.attr-value, .code-txt-li{
+.tag,
+.attr,
+.attr-value,
+.code-txt-li {
   display: inline-block;
 }
 
-.tag{
-  color:var(--primario);
+.tag {
+  color: var(--primario);
 }
 
-.attr{
+.attr {
   color: var(--sky-blue);
 }
 
-.attr-value{
+.attr-value {
   color: var(--orange);
 }
 
 /* HOME ------------------------------------------------------- */
 
-
 @media screen and (max-width: 550px) {
-/* NAVBAR ----------------------------------------------------- */
-body{
-  padding-top: 65px;
-}
+  /* NAVBAR ----------------------------------------------------- */
+  body {
+    padding-top: 65px;
+  }
 
-  .label-menu{
+  .label-menu {
     display: initial;
   }
 
-  .nav-links{
+  .nav-links {
     position: fixed;
     top: 65px;
     left: 0;
@@ -273,20 +280,20 @@ body{
     transition: all 200ms ease-in;
   }
 
-  .nav-links li a{
+  .nav-links li a {
     font-size: 25px;
   }
 
-  .icon-light-container{
+  .icon-light-container {
     width: 30px;
     height: 30px;
   }
 
-  #btn-menu:checked ~ .nav-links{
+  #btn-menu:checked ~ .nav-links {
     height: calc(100vh - 65px);
   }
-/* NAVBAR ----------------------------------------------------- */
-/* .code-txt{
+  /* NAVBAR ----------------------------------------------------- */
+  /* .code-txt{
   font-size: 10px;
 }
 
