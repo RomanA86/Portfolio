@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles.css" />
-    <title>Dark mode</title>
+
+    <title>Roman.com</title>
   </head>
   <body>
     <nav>
@@ -30,7 +40,9 @@
 
         <ul class="nav-links">
           <li><a href="#" data-section="nav" data-value="home">Home</a></li>
-          <li><a href="#" data-section="nav" data-value="about">About</a></li>
+          <li>
+            <a href="#about" data-section="nav" data-value="about">About</a>
+          </li>
           <li>
             <a href="#" data-section="nav" data-value="proyects">Proyects</a>
           </li>
@@ -95,8 +107,8 @@
       </div>
 
       <article class="about-text">
-        <h1>About Me</h1>
-        <p>
+        <h1 class="title">About Me</h1>
+        <p class="sm-txt">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis
           adipisci distinctio, cum, at consequuntur voluptatum, voluptate
           exercitationem molestiae eum explicabo ducimus inventore quod soluta.
@@ -105,20 +117,16 @@
           ipsa tempora in asperiores, iure quia eum ab ex aut provident? Fugiat,
           aliquid vel? Quis, reiciendis dolorum? Lorem ipsum dolor, sit amet
           consectetur adipisicing elit. Voluptate veritatis esse ratione
-          voluptatem excepturi laudantium aperiam explicabo maiores laboriosam,
-          delectus recusandae architecto eveniet est sit eos expedita voluptas
-          earum optio. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Nostrum dolorem voluptatum nihil consectetur quaerat, cum voluptatem
-          sit quasi labore nisi beatae dolore in porro? Ut ipsam dolorum
-          voluptatem minima porro.
+          voluptatem excepturi laudantium aperiam explicabo
         </p>
 
-        <h2>Tecnologias que uso</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum dolore
-          odit ab beatae dolor cupiditate at sint iste minus, laudantium ratione
-          quis aperiam magnam expedita nulla harum? Soluta, aut obcaecati.
-        </p>
+        <h2 class="subtitle">Tecnologias que uso</h2>
+        <div class="skills">
+          <img src="./assets/html.svg" class="skill-icon"/>
+          <img src="./assets/css.svg" class="skill-icon"/>
+          <img src="./assets/figma.svg" class="skill-icon"/>
+          <img src="./assets/js.svg" class="skill-icon"/>
+        </div>
       </article>
     </section>
 

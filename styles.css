@@ -16,7 +16,8 @@
   --sky-blue: #56c2e6;
   --orange: #ff8c66;
   --green: #4acf81;
-  --red: #ff5c7c;
+  --red: hsl(348, 100%, 68%);
+  /* --red: #ff5cad; */
   --violet: #7536d3;
   --yellow: #f1c65b;
 }
@@ -295,12 +296,12 @@ nav {
 /* ABOUT (inicio) ---------------------------------------------------- */
 
 #about {
-  min-height: 100vh;
+  min-height: calc(100vh - 74px);
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 70px;
 }
 
 .fto-perfil-container {
@@ -312,7 +313,7 @@ nav {
   animation-direction: alternate;
   animation-timing-function: linear;
   overflow: hidden;
-  border: solid 5px var(--primario);
+  border: solid 8px var(--primario);
 }
 
 .fto-perfil {
@@ -346,6 +347,35 @@ nav {
 
 .about-text {
   max-width: 500px;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--letras);
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  margin: 25px 0 20px;
+  color: var(--letras);
+  font-size: 25px;
+}
+
+.sm-txt {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 300;
+  color: var(--letras);
+}
+
+.skills {
+  display: flex;
+  gap: 30px;
+}
+
+.skill-icon {
+  width: 70px;
 }
 
 /* ABOUT (fin) ---------------------------------------------------- */
@@ -476,6 +506,36 @@ nav {
     line-height: 1.5;
   }
   /* HOME (fin) ----------------------------------------------------- */
+
+  /* ABOUT (inicio) ----------------------------------------------------- */
+.about-text{
+  padding: 0 20px;
+}
+
+  .title{
+    font-size: 45px;
+  }
+
+  .subtitle{
+    text-align: center;
+  }
+
+  .sm-txt{
+    font-size: 16px;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .skill-icon {
+    width: 70px;
+  }
+  /* ABOUT (fin) ----------------------------------------------------- */
 }
 
 @media screen and (max-width: 480px) {
@@ -535,11 +595,14 @@ nav {
   }
   /* HOME (inicio) ------------------------------------------------------- */
 
-    /* ABOUT (inicio) ------------------------------------------------------- */
+  /* ABOUT (inicio) ------------------------------------------------------- */
+  #about{
+    gap: 50px;
+  }
 
-    .fto-perfil-container {
-      width: 200px;
-      height: 200px;
-    }
-    /* ABOUT (fin) ------------------------------------------------------- */
+  .fto-perfil-container {
+    width: 200px;
+    height: 200px;
+  }
+  /* ABOUT (fin) ------------------------------------------------------- */
 }
