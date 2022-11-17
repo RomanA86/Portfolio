@@ -20,11 +20,11 @@
   /* --red: #ff5cad; */
   --violet: #7536d3;
   --yellow: #f1c65b;
-  --filtro-perfil:  linear-gradient(
-    hsl(236, 45%, 20%, 0.35),
-    hsl(236, 45%, 20%, 0.3)
-  ),
-  url(./assets/foto-cuadrada.jpg);
+  --filtro-perfil: linear-gradient(
+      hsl(236, 45%, 20%, 0.35),
+      hsl(236, 45%, 20%, 0.3)
+    ),
+    url(./assets/foto-cuadrada.jpg);
 }
 
 body {
@@ -46,11 +46,8 @@ body {
   --fondo-navbar: #f9f9f9;
   --sombra-navbar: hsl(0, 0%, 0%, 0.1);
   --letras: #0f1424;
-  --filtro-perfil: linear-gradient(
-    hsl(0, 0%, 90%, 0.2),
-    hsl(0, 0%, 90%, 0.1)
-  ),
-  url(./assets/foto-cuadrada.jpg);
+  --filtro-perfil: linear-gradient(hsl(0, 0%, 90%, 0.2), hsl(0, 0%, 90%, 0.1)),
+    url(./assets/foto-cuadrada.jpg);
 }
 
 #icon-light-mode {
@@ -388,22 +385,40 @@ nav {
 
 /* PROYECTS (inicio) ----------------------------------------------- */
 
-/* .home-container {
-  max-width: 1500px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: calc(100vh - 74px);
-  margin: 0 auto;
-  gap: 20px;
-} */
-
-#proyects{
-  min-height: calc(100vh - 74px);
-  background-image: url(./assets/proyect-fondo-1.png);
+#proyects {
+  min-height: calc(100vh - 64px);
+  background-image: url(./assets/proyect-fondo-2.png);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.title-proyect {
+  padding-top: 40px;
+}
+
+.cards-container {
+  padding: 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.card {
+  width: 350px;
+  background-color: var(--letras);
+  border-radius: 15px;
+}
+
+.contact{
+  height: 100vh;
+  background-color: red;
 }
 
 /* PROYECTS (fin) -------------------------------------------------- */
@@ -437,6 +452,17 @@ nav {
   }
 
   /* ABOUT (fin) ------------------------------------------------------- */
+
+  /* PROYECT (inicio) ------------------------------------------------------- */
+  #proyects {
+    gap: 40px;
+  }
+
+  .title-proyect {
+    padding-top: 100px;
+  }
+
+  /* PROYECT (fin) ------------------------------------------------------- */
 }
 
 @media screen and (max-width: 992px) {
@@ -535,19 +561,19 @@ nav {
   /* HOME (fin) ----------------------------------------------------- */
 
   /* ABOUT (inicio) ----------------------------------------------------- */
-.about-text{
-  padding: 0 20px;
-}
+  .about-text {
+    padding: 0 20px;
+  }
 
-  .title{
+  .title {
     font-size: 45px;
   }
 
-  .subtitle{
+  .subtitle {
     text-align: center;
   }
 
-  .sm-txt{
+  .sm-txt {
     font-size: 16px;
   }
 
@@ -558,11 +584,23 @@ nav {
     align-items: center;
     gap: 15px;
   }
-  
+
   .skill-icon {
     width: 70px;
   }
   /* ABOUT (fin) ----------------------------------------------------- */
+
+  /* PROYECT (inicio) ------------------------------------------------------- */
+  .cards-container {
+    gap: 40px;
+    padding: 0 10px;
+  }
+
+  .card{
+    width: 100%;
+    max-width: 350px;
+  }
+  /* PROYECT (fin) ------------------------------------------------------- */
 }
 
 @media screen and (max-width: 480px) {
@@ -623,7 +661,7 @@ nav {
   /* HOME (inicio) ------------------------------------------------------- */
 
   /* ABOUT (inicio) ------------------------------------------------------- */
-  #about{
+  #about {
     gap: 50px;
   }
 
