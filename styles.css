@@ -262,6 +262,7 @@ nav {
 
 .home-btns a:hover {
   transform: scale(1.2);
+  filter: contrast(250%);
 }
 
 .container-code {
@@ -412,14 +413,94 @@ nav {
 
 .card {
   width: 350px;
-  background-color: var(--letras);
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  color: var(--letras);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25),
+    inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   border-radius: 15px;
+  background: url(./assets/fondo-card-proyect.jpg);
+  background-size: cover;
+  background-position: center center;
+  transition: all 50ms ease-in;
+  outline-offset: -0.5px;
+}
+
+.card:hover{
+  outline: solid 2px var(--primario);
+  box-shadow: 0 5px 10px hsl(246, 80%, 60%, 0.4),
+  inset 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card-txt{
+  background-color: var(--fondo-navbar);
+  border-radius: 15px;
+  padding: 20px;
+  border-bottom: solid 5px var(--primario) 
+}
+
+.card-title{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.card-description{
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+
+.card-bot{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.card-technologies{
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: var(--sky-blue);
+}
+
+.card-link img{
+  width: 28px;
+}
+
+.card-link img:hover{
+  filter: contrast(200%);
 }
 
 .contact{
   height: 100vh;
   background-color: red;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* PROYECTS (fin) -------------------------------------------------- */
 @media screen and (max-width: 1025px) {
@@ -455,12 +536,13 @@ nav {
 
   /* PROYECT (inicio) ------------------------------------------------------- */
   #proyects {
+    min-height: 100vh;
     gap: 40px;
   }
 
-  .title-proyect {
+  /* .title-proyect {
     padding-top: 100px;
-  }
+  } */
 
   /* PROYECT (fin) ------------------------------------------------------- */
 }
@@ -670,4 +752,32 @@ nav {
     height: 200px;
   }
   /* ABOUT (fin) ------------------------------------------------------- */
+/* PROYECTS  (inicio)*/
+
+.card{
+  height: 225px;
+}
+
+.card-txt{
+  padding: 18px;
+}
+
+.card-title{
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.card-description{
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.card-technologies{
+  font-size: 12px;
+}
+
+.card-link img{
+  width: 24px;
+}
+
 }
