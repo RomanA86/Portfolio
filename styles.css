@@ -12,7 +12,7 @@
   --fondo-navbar: #1c1f4a;
   --letras: hsl(0, 0%, 90%);
   --sombra-navbar: hsl(0, 0%, 0%, 0.3);
-  --primario: #5847eb;
+  --primario: rgb(88, 71, 235);
   --sky-blue: #56c2e6;
   --orange: #ff8c66;
   --green: #4acf81;
@@ -226,7 +226,7 @@ nav {
   margin-bottom: 15px;
 }
 
-.home-txt .btn-CV {
+ .home-txt .btn-CV {
   font-size: 20px;
   padding: 12px 22px;
   border-radius: 22px;
@@ -366,8 +366,7 @@ nav {
   color: var(--letras);
   font-size: 25px;
 }
-
-.sm-txt {
+ .sm-txt{
   font-size: 20px;
   line-height: 1.4;
   font-weight: 300;
@@ -479,7 +478,80 @@ nav {
   height: 100vh;
 }
 
-/* OLAS(inicio) */
+/* CONTACT (inicio)  ----------------------------------------------------------------------------------------------*/
+
+#contact{
+  height: calc(100vh + 150px);
+}
+
+.contact-title,.contact-description{
+  text-align: center;
+}
+
+.contact-description{
+  max-width: 400px;
+  margin: 0 auto;
+  color: var(--letras);
+  margin-bottom: 50px;
+}
+
+form{
+  max-width: 620px;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.form-top{
+  display: flex;
+  gap: 20px;
+}
+
+.name-input, .email-input{
+  width: 100%;
+}
+
+.name-input, .email-input, .msg-input{
+  outline: 0;
+  color: var(--letras);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 300;
+  background: transparent;
+  border: solid 3px var(--primario);
+}
+
+.msg-input{
+  height: 200px;
+  max-width: 100%;
+}
+
+
+
+.btn-send{
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+  padding: 12px 22px;
+  border-radius: 22px;
+  border: solid 2px var(--primario);
+  cursor: pointer;
+  outline-offset: -1px;
+  background-color: transparent;
+  color: var(--primario);
+  overflow: hidden;
+  transition: all 250ms ease-in-out;
+}
+
+/* CONTACT (fin)  -------------------------------------------------------------------------------------------------*/
+
+/* OLAS(inicio) --------------------------------------------------------------------------------------------------*/
 .waves{
   position: absolute;
   width: 100%;
@@ -523,15 +595,16 @@ nav {
 }
 
 
-@media screen and (min-width:768px) {
+/* @media screen and (min-width:768px) {
   .waves{
-      height: 150px;
-      min-height: 150px;
+      height: 80px;
+      min-height: 80px;
   }
-}
-/* OLAS(fin) */
+} */
 
-/* FOOTER(inicio) */
+/* OLAS(fin) --------------------------------------------------------------------------------------------------*/
+
+/* FOOTER(inicio) --------------------------------------------------------------------------------------------------*/
 footer{
   position: absolute;
   width: 100%;
@@ -545,7 +618,7 @@ footer{
   color: white;
   background-color: rgb(88, 71, 235);
 }
-/* FOOTER(fin) */
+/* FOOTER(fin) --------------------------------------------------------------------------------------------------*/
 
 
 
@@ -735,7 +808,7 @@ footer{
     text-align: center;
   }
 
-  .sm-txt {
+ .sm-txt{
     font-size: 16px;
   }
 
@@ -763,6 +836,20 @@ footer{
     max-width: 350px;
   }
   /* PROYECT (fin) ------------------------------------------------------- */
+/* CONTACT (inicio) -----------------------------------------------------*/
+.contact-description{
+  padding: 0 15px;
+}
+
+.form-top{
+  flex-direction: column;
+}
+
+.name-input,.email-input,.msg-input,.btn-send{
+  font-size: 16px;
+}
+/* CONTACT (fin) -----------------------------------------------------*/
+
 }
 
 @media screen and (max-width: 480px) {
@@ -798,13 +885,25 @@ footer{
   }
   /* ABOUT (fin) ------------------------------------------------------- */
  
+  /*CONTACT (inicio) -------------------------------------*/
+  #contact{
+    height: calc(100vh + 100px);
+  }
+  /*CONTACT (fin)* -------------------------------------/
+
   /* OLAS(inicio) ------------------------------------- */
 .waves{
+
   height: 10vh;
   min-height: 50px;
   max-height: 50px;
 }
   /* OLAS(fin) --------------------------------------- */
+/*FOOTER (iniico)* -------------------------------------*/
+  footer{
+    font-size: 10px;
+  }
+  /*FOOTER (fin)* -------------------------------------*/
 }
 
 @media screen and (max-width: 320px) {
