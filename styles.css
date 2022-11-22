@@ -387,7 +387,7 @@ nav {
 /* PROYECTS (inicio) ----------------------------------------------- */
 
 #proyects {
-  min-height: calc(100vh - 64px);
+  min-height: 100vh;
   background-image: url(./assets/proyect-fondo-2.png);
   background-repeat: no-repeat;
   background-position: center top;
@@ -429,55 +429,62 @@ nav {
   outline-offset: -0.5px;
 }
 
-.card:hover{
+.card:hover {
   outline: solid 2px var(--primario);
   box-shadow: 0 5px 10px hsl(246, 80%, 60%, 0.4),
-  inset 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+    inset 0 2px 2px 0 rgba(0, 0, 0, 0.25);
 }
 
-.card-txt{
+.card-txt {
   background-color: var(--fondo-navbar);
   border-radius: 15px;
   padding: 20px;
-  border-bottom: solid 5px var(--primario) 
+  border-bottom: solid 5px var(--primario);
 }
 
-.card-title{
+.card-title {
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
-.card-description{
+.card-description {
   margin-bottom: 5px;
   font-weight: 300;
 }
 
-.card-bot{
+.card-bot {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
-.card-technologies{
+.card-technologies {
   font-weight: 300;
   font-size: 14px;
   letter-spacing: 0.5px;
   color: var(--sky-blue);
 }
 
-.card-link img{
+.card-link img {
   width: 28px;
 }
 
-.card-link img:hover{
+.card-link img:hover {
   filter: contrast(200%);
 }
 
-.contact{
+.contact {
   height: 100vh;
   background-color: red;
 }
+
+
+
+
+
+
+
 
 
 
@@ -536,16 +543,21 @@ nav {
 
   /* PROYECT (inicio) ------------------------------------------------------- */
   #proyects {
-    min-height: 100vh;
     gap: 40px;
   }
 
-  /* .title-proyect {
+  .title-proyect{
     padding-top: 100px;
-  } */
+  }
+
+  .cards-container{
+    padding-bottom: 100px;
+  }
 
   /* PROYECT (fin) ------------------------------------------------------- */
 }
+
+
 
 @media screen and (max-width: 992px) {
   /* HOME (inicio) ------------------------------------------------------- */
@@ -675,10 +687,10 @@ nav {
   /* PROYECT (inicio) ------------------------------------------------------- */
   .cards-container {
     gap: 40px;
-    padding: 0 10px;
+    padding: 0 10px 100px;
   }
 
-  .card{
+  .card {
     width: 100%;
     max-width: 350px;
   }
@@ -752,32 +764,32 @@ nav {
     height: 200px;
   }
   /* ABOUT (fin) ------------------------------------------------------- */
-/* PROYECTS  (inicio)*/
+  /* PROYECTS  (inicio) ---------------------------------------------------*/
 
-.card{
-  height: 225px;
-}
+  .card {
+    height: 225px;
+  }
 
-.card-txt{
-  padding: 18px;
-}
+  .card-txt {
+    padding: 18px;
+  }
 
-.card-title{
-  font-size: 18px;
-  margin-bottom: 15px;
-}
+  .card-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
 
-.card-description{
-  font-size: 14px;
-  margin-bottom: 2px;
-}
+  .card-description {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
 
-.card-technologies{
-  font-size: 12px;
-}
+  .card-technologies {
+    font-size: 12px;
+  }
 
-.card-link img{
-  width: 24px;
-}
-
+  .card-link img {
+    width: 24px;
+  }
+  /* PROYECTS  (fin) ---------------------------------------------------*/
 }
