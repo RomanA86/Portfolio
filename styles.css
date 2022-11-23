@@ -509,6 +509,12 @@ form {
   gap: 20px;
 }
 
+.input-group label{
+  margin-bottom: 10px;
+  display: block;
+  padding-left: 12px;
+}
+
 .name-input,
 .email-input {
   width: 100%;
@@ -525,12 +531,20 @@ form {
   font-weight: 300;
   background: transparent;
   border: solid 2px var(--primario);
+  transition: all 100ms ease-in-out;
 }
 
 .msg-input {
-  height: 200px;
+  min-height: 200px;
+  max-height: 200px;
+  min-width: 100%;
   max-width: 100%;
 }
+
+input:focus, textarea:focus{
+  box-shadow: 0 0px 1px 5px hsl(246, 80%, 60%, 0.4);
+}
+
 
 .btn-send {
   margin-left: auto;

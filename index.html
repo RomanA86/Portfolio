@@ -20,7 +20,6 @@
     <title>Roman.com</title>
   </head>
   <body>
-
     <nav>
       <div class="nav-container">
         <div class="flags" id="flags">
@@ -45,10 +44,14 @@
             <a href="#about" data-section="nav" data-value="about">About</a>
           </li>
           <li>
-            <a href="#proyects" data-section="nav" data-value="proyects">Proyects</a>
+            <a href="#proyects" data-section="nav" data-value="proyects"
+              >Proyects</a
+            >
           </li>
           <li>
-            <a href="#contact" data-section="nav" data-value="contact">Contact</a>
+            <a href="#contact" data-section="nav" data-value="contact"
+              >Contact</a
+            >
           </li>
           <li class="icon-light-container">
             <img src="./assets/bxs-sun.svg" id="icon-light-mode" />
@@ -123,10 +126,10 @@
 
         <h2 class="subtitle">Tecnologias que uso</h2>
         <div class="skills">
-          <img src="./assets/html.svg" class="skill-icon"/>
-          <img src="./assets/css.svg" class="skill-icon"/>
-          <img src="./assets/figma.svg" class="skill-icon"/>
-          <img src="./assets/js.svg" class="skill-icon"/>
+          <img src="./assets/html.svg" class="skill-icon" />
+          <img src="./assets/css.svg" class="skill-icon" />
+          <img src="./assets/figma.svg" class="skill-icon" />
+          <img src="./assets/js.svg" class="skill-icon" />
         </div>
       </article>
     </section>
@@ -134,16 +137,19 @@
     <section id="proyects">
       <h1 class="title title-proyect">Proyects</h1>
       <div class="cards-container">
-
         <div class="card">
           <div class="card-txt">
             <h3 class="card-title">Proyect name</h3>
-            <p class="card-description">Responsive intro section. proyect from drontendmentor.io</p>
+            <p class="card-description">
+              Responsive intro section. proyect from drontendmentor.io
+            </p>
             <div class="card-bot">
               <p class="card-technologies">Javascript + CSS</p>
               <div class="card-btn-container">
-                <a href="#" class="card-link"><img src="./assets/git.svg"></a>
-                <a href="#" class="card-link"><img src="./assets/external-link.svg"></a>
+                <a href="#" class="card-link"><img src="./assets/git.svg" /></a>
+                <a href="#" class="card-link"
+                  ><img src="./assets/external-link.svg"
+                /></a>
               </div>
             </div>
           </div>
@@ -152,12 +158,16 @@
         <div class="card">
           <div class="card-txt">
             <h3 class="card-title">Proyect name</h3>
-            <p class="card-description">Responsive intro section. proyect from drontendmentor.io</p>
+            <p class="card-description">
+              Responsive intro section. proyect from drontendmentor.io
+            </p>
             <div class="card-bot">
               <p class="card-technologies">Javascript + CSS</p>
               <div class="card-btn-container">
-                <a href="#" class="card-link"><img src="./assets/git.svg"></a>
-                <a href="#" class="card-link"><img src="./assets/external-link.svg"></a>
+                <a href="#" class="card-link"><img src="./assets/git.svg" /></a>
+                <a href="#" class="card-link"
+                  ><img src="./assets/external-link.svg"
+                /></a>
               </div>
             </div>
           </div>
@@ -166,46 +176,101 @@
         <div class="card">
           <div class="card-txt">
             <h3 class="card-title">Proyect name</h3>
-            <p class="card-description">Responsive intro section. proyect from drontendmentor.io</p>
+            <p class="card-description">
+              Responsive intro section. proyect from drontendmentor.io
+            </p>
             <div class="card-bot">
               <p class="card-technologies">Javascript + CSS</p>
               <div class="card-btn-container">
-                <a href="#" class="card-link"><img src="./assets/git.svg"></a>
-                <a href="#" class="card-link"><img src="./assets/external-link.svg"></a>
+                <a href="#" class="card-link"><img src="./assets/git.svg" /></a>
+                <a href="#" class="card-link"
+                  ><img src="./assets/external-link.svg"
+                /></a>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
     <section id="contact">
       <h1 class="title contact-title">Get in touch</h1>
-      <p class="contact-description sm-txt">Get in touch or shoot me an email directly on hellocodewonders@gmail.com</p>
+      <p class="contact-description sm-txt">
+        Get in touch or shoot me an email directly on hellocodewonders@gmail.com
+      </p>
 
       <form>
         <div class="form-top">
-          <input type="text" placeholder="Name" class="name-input">
-          <input type="text" placeholder="Email" class="email-input">
+          <div class="input-group">
+            <label for="name" class="sm-txt">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="name-input"
+            />
+          </div>
+          <div class="input-group">
+            <label for="name" class="sm-txt">Email</label>
+            <input
+              type="text"
+              id="email"
+              class="email-input"
+            />
+          </div>
         </div>
-        <textarea class="msg-input" placeholder="Message"></textarea>
-        <button class="btn-send">Send<img class="btn-send-icon" src="./assets/send.svg"></button>
+        <div class="input-group">
+          <label for="msg" class="sm-txt">Message</label>
+          <textarea class="msg-input" id="msg"></textarea>
+        </div>
+
+        <button class="btn-send">
+          Send<img class="btn-send-icon" src="./assets/send.svg" />
+        </button>
       </form>
+    </section>
 
-</section>
-
-      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-        <defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" /></defs>
-        <g class="parallax">
-            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(119, 107, 228, 0.7)" />
-            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(109, 96, 231, 0.5)" />
-            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(98, 83, 233, 0.3)" /> 
-            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(88, 71, 235,0.9)" />
-        </g>
+    <svg
+      class="waves"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28"
+      preserveAspectRatio="none"
+      shape-rendering="auto"
+    >
+      <defs>
+        <path
+          id="gentle-wave"
+          d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+        />
+      </defs>
+      <g class="parallax">
+        <use
+          xlink:href="#gentle-wave"
+          x="48"
+          y="0"
+          fill="rgba(119, 107, 228, 0.7)"
+        />
+        <use
+          xlink:href="#gentle-wave"
+          x="48"
+          y="3"
+          fill="rgba(109, 96, 231, 0.5)"
+        />
+        <use
+          xlink:href="#gentle-wave"
+          x="48"
+          y="5"
+          fill="rgba(98, 83, 233, 0.3)"
+        />
+        <use
+          xlink:href="#gentle-wave"
+          x="48"
+          y="7"
+          fill="rgba(88, 71, 235,0.9)"
+        />
+      </g>
     </svg>
     <footer>Design & Built by Román Alvarez</footer>
-    
 
     <script src="app.js"></script>
   </body>
