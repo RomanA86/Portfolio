@@ -519,12 +519,12 @@ form {
 .msg-input {
   outline: 0;
   color: var(--letras);
-  padding: 10px;
-  border-radius: 5px;
+  padding: 12px;
+  border-radius: 18px;
   font-size: 20px;
   font-weight: 300;
   background: transparent;
-  border: solid 3px var(--primario);
+  border: solid 2px var(--primario);
 }
 
 .msg-input {
