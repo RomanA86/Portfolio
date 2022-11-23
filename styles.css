@@ -226,7 +226,7 @@ nav {
   margin-bottom: 15px;
 }
 
- .home-txt .btn-CV {
+.home-txt .btn-CV {
   font-size: 20px;
   padding: 12px 22px;
   border-radius: 22px;
@@ -366,7 +366,7 @@ nav {
   color: var(--letras);
   font-size: 25px;
 }
- .sm-txt{
+.sm-txt {
   font-size: 20px;
   line-height: 1.4;
   font-weight: 300;
@@ -474,28 +474,28 @@ nav {
   filter: contrast(200%);
 }
 
-#contact {
-  height: 100vh;
-}
+/* PROYECTS (fin) ----------------------------------------------- */
 
 /* CONTACT (inicio)  ----------------------------------------------------------------------------------------------*/
 
-#contact{
-  height: calc(100vh + 150px);
+#contact {
+  /* min-height: 100vh; */
+  padding-bottom: 100px;
 }
 
-.contact-title,.contact-description{
+.contact-title,
+.contact-description {
   text-align: center;
 }
 
-.contact-description{
+.contact-description {
   max-width: 400px;
   margin: 0 auto;
   color: var(--letras);
   margin-bottom: 50px;
 }
 
-form{
+form {
   max-width: 620px;
   padding: 20px;
   margin: 0 auto;
@@ -504,16 +504,19 @@ form{
   flex-direction: column;
 }
 
-.form-top{
+.form-top {
   display: flex;
   gap: 20px;
 }
 
-.name-input, .email-input{
+.name-input,
+.email-input {
   width: 100%;
 }
 
-.name-input, .email-input, .msg-input{
+.name-input,
+.email-input,
+.msg-input {
   outline: 0;
   color: var(--letras);
   padding: 10px;
@@ -524,14 +527,12 @@ form{
   border: solid 3px var(--primario);
 }
 
-.msg-input{
+.msg-input {
   height: 200px;
   max-width: 100%;
 }
 
-
-
-.btn-send{
+.btn-send {
   margin-left: auto;
   display: flex;
   justify-content: center;
@@ -549,10 +550,24 @@ form{
   transition: all 250ms ease-in-out;
 }
 
+.btn-send:hover {
+  color: hsl(0, 0%, 90%);
+  background-color: var(--primario);
+  box-shadow: 0 2px 50px hsl(246, 80%, 60%, 0.4);
+}
+
+.btn-send-icon{
+  transition: all 250ms ease-in-out;
+}
+
+.btn-send:hover .btn-send-icon{
+  filter: brightness(5);
+}
+
 /* CONTACT (fin)  -------------------------------------------------------------------------------------------------*/
 
 /* OLAS(inicio) --------------------------------------------------------------------------------------------------*/
-.waves{
+.waves {
   position: absolute;
   width: 100%;
   bottom: 20px;
@@ -561,51 +576,44 @@ form{
   max-height: 100px;
 }
 
-.parallax > use{
-  animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+.parallax > use {
+  animation: moveForever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
 
 .parallax > use:nth-child(1) {
-          animation-delay: -2s;
-          animation-duration: 7s;
+  animation-delay: -2s;
+  animation-duration: 7s;
 }
 
 .parallax > use:nth-child(2) {
-          animation-delay: -3s;
-          animation-duration: 10s;
+  animation-delay: -3s;
+  animation-duration: 10s;
 }
 
 .parallax > use:nth-child(3) {
-          animation-delay: -4s;
-          animation-duration: 13s;
+  animation-delay: -4s;
+  animation-duration: 13s;
 }
 
 .parallax > use:nth-child(4) {
-          animation-delay: -5s;
-          animation-duration: 20s;
+  animation-delay: -5s;
+  animation-duration: 20s;
 }
 
-@keyframes moveForever{
-  0%{
-      transform: translate3d(-90px, 0, 0);
+@keyframes moveForever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
   }
-  100%{
-      transform: translate3d(85px, 0, 0);
+  100% {
+    transform: translate3d(85px, 0, 0);
   }
 }
 
-
-/* @media screen and (min-width:768px) {
-  .waves{
-      height: 80px;
-      min-height: 80px;
-  }
-} */
 
 /* OLAS(fin) --------------------------------------------------------------------------------------------------*/
 
 /* FOOTER(inicio) --------------------------------------------------------------------------------------------------*/
-footer{
+footer {
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -650,7 +658,14 @@ footer{
 
 
 
-/* PROYECTS (fin) -------------------------------------------------- */
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1025px) {
   /* HOME (inicio) ------------------------------------------------------- */
   .home-container {
@@ -687,18 +702,16 @@ footer{
     gap: 40px;
   }
 
-  .title-proyect{
+  .title-proyect {
     padding-top: 100px;
   }
 
-  .cards-container{
+  .cards-container {
     padding-bottom: 100px;
   }
 
   /* PROYECT (fin) ------------------------------------------------------- */
 }
-
-
 
 @media screen and (max-width: 992px) {
   /* HOME (inicio) ------------------------------------------------------- */
@@ -808,7 +821,7 @@ footer{
     text-align: center;
   }
 
- .sm-txt{
+  .sm-txt {
     font-size: 16px;
   }
 
@@ -836,20 +849,23 @@ footer{
     max-width: 350px;
   }
   /* PROYECT (fin) ------------------------------------------------------- */
-/* CONTACT (inicio) -----------------------------------------------------*/
-.contact-description{
-  padding: 0 15px;
-}
 
-.form-top{
-  flex-direction: column;
-}
+  /* CONTACT (inicio) -----------------------------------------------------*/
+  .contact-description {
+    padding: 0 15px;
+  }
 
-.name-input,.email-input,.msg-input,.btn-send{
-  font-size: 16px;
-}
-/* CONTACT (fin) -----------------------------------------------------*/
+  .form-top {
+    flex-direction: column;
+  }
 
+  .name-input,
+  .email-input,
+  .msg-input,
+  .btn-send {
+    font-size: 16px;
+  }
+  /* CONTACT (fin) -----------------------------------------------------*/
 }
 
 @media screen and (max-width: 480px) {
@@ -884,23 +900,23 @@ footer{
     height: 270px;
   }
   /* ABOUT (fin) ------------------------------------------------------- */
- 
+
   /*CONTACT (inicio) -------------------------------------*/
-  #contact{
+  #contact {
     height: calc(100vh + 100px);
   }
   /*CONTACT (fin)* -------------------------------------/
 
   /* OLAS(inicio) ------------------------------------- */
-.waves{
-
-  height: 10vh;
-  min-height: 50px;
-  max-height: 50px;
-}
+  .waves {
+    height: 10vh;
+    min-height: 50px;
+    max-height: 50px;
+  }
   /* OLAS(fin) --------------------------------------- */
-/*FOOTER (iniico)* -------------------------------------*/
-  footer{
+
+  /*FOOTER (iniico)* -------------------------------------*/
+  footer {
     font-size: 10px;
   }
   /*FOOTER (fin)* -------------------------------------*/
@@ -967,4 +983,15 @@ footer{
     width: 24px;
   }
   /* PROYECTS  (fin) ---------------------------------------------------*/
+
+  /* CONTACT  (inicio) ---------------------------------------------------*/
+
+  #contact {
+    min-height: calc(100vh + 150px);
+    padding-bottom: 0;
+  }
+
+    /* CONTACT  (fin) ---------------------------------------------------*/
+
+
 }
