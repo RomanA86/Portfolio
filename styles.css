@@ -226,10 +226,10 @@ nav {
   margin-bottom: 15px;
 }
 
-.home-txt .btn-CV {
+ .btn-CV {
   font-size: 20px;
   padding: 12px 22px;
-  border-radius: 22px;
+  border-radius: 10px;
   border: solid 2px var(--primario);
   cursor: pointer;
   outline-offset: -1px;
@@ -237,6 +237,7 @@ nav {
   color: var(--primario);
   overflow: hidden;
   transition: all 250ms ease-in-out;
+  position: relative;
 }
 
 .btn-CV:hover {
@@ -508,6 +509,30 @@ form {
   gap: 20px;
 }
 
+.form-top .input-group{
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.border-bot{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  /* background-color: #5847eb66; */
+  background-color: var(--primario);
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: all 200ms ease-in-out;
+}
+
+.input-group input:focus ~ .border-bot{
+  transform: scaleX(1);
+}
+
 .input-group label{
   margin-bottom: 10px;
   display: block;
@@ -525,7 +550,7 @@ form {
   outline: 0;
   color: var(--letras);
   padding: 12px;
-  border-radius: 18px;
+  border-radius: 10px;
   font-size: 20px;
   font-weight: 300;
   background: transparent;
@@ -540,8 +565,8 @@ form {
   max-width: 100%;
 }
 
-input:focus, textarea:focus{
-  box-shadow: 0 0px 1px 5px hsl(246, 80%, 60%, 0.4);
+textarea:focus{
+  box-shadow: 0 0px 1px 5px #5847eb66;
 }
 
 
@@ -553,7 +578,7 @@ input:focus, textarea:focus{
   gap: 5px;
   font-size: 20px;
   padding: 12px 22px;
-  border-radius: 22px;
+  border-radius: 10px;
   border: solid 2px var(--primario);
   cursor: pointer;
   outline-offset: -1px;
@@ -736,10 +761,6 @@ footer {
     font-size: 20px;
   }
 
-  .home-txt .btn-CV {
-    font-size: 16px;
-  }
-
   .home-btns img {
     width: 35px;
     height: 35px;
@@ -819,6 +840,11 @@ footer {
     font-size: 15px;
     line-height: 1.5;
   }
+
+  .btn-CV{
+    font-size: 16px;
+    padding: 10px 20px;
+  }
   /* HOME (fin) ----------------------------------------------------- */
 
   /* ABOUT (inicio) ----------------------------------------------------- */
@@ -870,6 +896,10 @@ footer {
 
   .form-top {
     flex-direction: column;
+  }
+
+  .btn-send{
+    padding: 10px 20px;
   }
 
   .name-input,
