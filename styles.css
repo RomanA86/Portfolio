@@ -88,6 +88,11 @@ nav {
 .flags__img {
   display: block;
   cursor: pointer;
+  transition: box-shadow 50ms ease-in;
+}
+
+.flags__img:hover{
+  box-shadow: 0px 0px 0px 2px var(--primario);
 }
 
 .nav-links {
