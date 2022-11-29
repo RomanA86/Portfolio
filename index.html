@@ -196,35 +196,41 @@
     <section id="contact">
       <h1 class="title contact-title">Get in touch</h1>
       <p class="contact-description sm-txt">
-        Get in touch or shoot me an email directly on hellocodewonders@gmail.com
+        Get in touch or shoot me an email directly on <a href="mailto:alvarezroman150@gmai.com">email</a>
       </p>
 
-      <form>
+      <form action="https://formsubmit.co/alvarezroman150@gmail.com" method="POST">
         <div class="form-top">
           <div class="input-group">
             <label for="name" class="sm-txt">Name</label>
             <input
+              name="name"
               type="text"
               id="name"
               class="name-input"
+              required
             />
             <span class="border-bot"></span>
           </div>
           <div class="input-group">
             <label for="name" class="sm-txt">Email</label>
             <input
-              type="text"
+              name="email"
+              type="email"
               id="email"
               class="email-input"
+              required
             />
             <span class="border-bot"></span>
           </div>
         </div>
         <div class="input-group">
           <label for="msg" class="sm-txt">Message</label>
-          <textarea class="msg-input" id="msg"></textarea>
+          <textarea class="msg-input" name="message" id="msg" required></textarea>
         </div>
 
+        <input type="hidden" name="_subject" value="Tu Portafolio!">
+        <input type="hidden" name="_template" value="table">
         <button class="btn-send">
           Send<img class="btn-send-icon" src="./assets/send.svg" />
         </button>
