@@ -1,7 +1,7 @@
 {
     "nav":{
         "home": "inicio",
-        "about": "sobre mi",
+        "about": "sobre mí",
         "proyects": "proyectos",
         "contact": "contacto"
     },
@@ -19,5 +19,24 @@
         "like-1": "Natación",
         "like-2": "Codear",
         "like-3": "Diseño Web"
+    },
+    "about":{
+        "title": "Sobre mí",
+        "description":"Hola, qué tal, tú cómo estás Dime si eres feliz Porque ya yo me rendí Vuelve pronto, baby Y aunque pase el tiempo no te he olvidado Yo me di cuenta que aún te amo Que sin tus besos no soy feliz Que no es lo mismo al estar sin ti Y aunque pase el tiempo, no te he olvidado Yo me di cuenta que aún te amo Que sin tus besos no soy feliz Que no es lo mismo al estar sin ti nunca te podré olvidar Te lo juro por Dios Porque me enseñaste amar Separarnos fue un error   Cuánto te quiero, cuánto te extraño Me desespero, vuelve a mi lado Cuánto te quiero, cuánto te extraño Mi amor, no te imaginas cuánto te amo yo Cuánto te quiero,cuánto te extraño Me desespero, vuelve a mi lado Cuánto te quiero, cuánto te extrañoMi amor, no te imaginas cuánto te amo yo.",
+        "subtitle": "Mis habilidades"
+    },
+    "proyects":{
+        "title": "Proyectos"
+    },
+    "contact":{
+        "title": "Contacto",
+        "subtitle": "Contactame o enviame un email directamente a <a href='mailto:alvarezroman150@gmai.com'>alvarezroman150@gmai.com</a>",
+        "name": "Nombre",
+        "email": "Correo",
+        "msg": "Mensaje",
+        "btn": "Enviar"
+    },
+    "footer":{
+        "title": "Diseñada & Construida por Román Alvarez"
     }
 }

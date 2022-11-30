@@ -19,5 +19,24 @@
         "like-1": "Swimming",
         "like-2": "Coding",
         "like-3": "Web Design"
+    },
+    "about":{
+        "title": "About me",
+        "description":"Hi, Im Anurag Hazra, a self-taught passionate FrontEnd developer from Argentina,  currently working at Razorpay as a FrontEnd engineer. I've been building stuff on the web since when I was in 6th standard, I've made countless side projects and I also posses magical powers of using react to build delightful user interfaces. <br>I also love doing open source development, I actively maintain various notable open source projects with over 30k+ stars on GitHub and 50m+ hits. It gives me a wonderful feeling of achievement and joy which I cannot explain in words.",
+        "subtitle": "My Skillset"
+    },
+    "proyects":{
+        "title": "Proyects"
+    },
+    "contact":{
+        "title": "Contact",
+        "subtitle": "Get in touch or shoot me an email directly on <a href='mailto:alvarezroman150@gmai.com'>alvarezroman150@gmai.com</a>",
+        "name": "Name",
+        "email": "Email",
+        "msg": "Message",
+        "btn": "Send"
+    },
+    "footer":{
+        "title": "Design & Built by Román Alvarez"
     }
 }

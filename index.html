@@ -111,8 +111,8 @@
       </div>
 
       <article class="about-text">
-        <h1 class="title">About Me</h1>
-        <p class="sm-txt">
+        <h1 class="title" data-section="about" data-value="title">About Me</h1>
+        <p class="sm-txt" data-section="about" data-value="description">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis
           adipisci distinctio, cum, at consequuntur voluptatum, voluptate
           exercitationem molestiae eum explicabo ducimus inventore quod soluta.
@@ -124,7 +124,7 @@
           voluptatem excepturi laudantium aperiam 
         </p>
 
-        <h2 class="subtitle">Tecnologias que uso</h2>
+        <h2 class="subtitle" data-section="about" data-value="subtitle">Tecnologias que uso</h2>
         <div class="skills">
           <img src="./assets/html.svg" class="skill-icon" />
           <img src="./assets/css.svg" class="skill-icon" />
@@ -136,7 +136,7 @@
     </section>
 
     <section id="proyects">
-      <h1 class="title title-proyect">Proyects</h1>
+      <h1 class="title title-proyect" data-section="proyects" data-value="title">Proyects</h1>
       <div class="cards-container">
         <div class="card">
           <div class="card-txt">
@@ -195,15 +195,15 @@
     </section>
 
     <section id="contact">
-      <h1 class="title contact-title">Get in touch</h1>
-      <p class="contact-description sm-txt">
+      <h1 class="title contact-title" data-section="contact" data-value="title">Contact</h1>
+      <p class="contact-description sm-txt" data-section="contact" data-value="subtitle">
         Get in touch or shoot me an email directly on <a href="mailto:alvarezroman150@gmai.com">alvarezroman150@gmai.com</a>
       </p>
 
       <form action="https://formsubmit.co/alvarezroman150@gmail.com" method="POST">
         <div class="form-top">
           <div class="input-group">
-            <label for="name" class="sm-txt">Name</label>
+            <label for="name" class="sm-txt" data-section="contact" data-value="name">Name</label>
             <input
               name="name"
               type="text"
@@ -214,7 +214,7 @@
             <span class="border-bot"></span>
           </div>
           <div class="input-group">
-            <label for="name" class="sm-txt">Email</label>
+            <label for="name" class="sm-txt" data-section="contact" data-value="email">Email</label>
             <input
               name="email"
               type="email"
@@ -226,14 +226,13 @@
           </div>
         </div>
         <div class="input-group">
-          <label for="msg" class="sm-txt">Message</label>
+          <label for="msg" class="sm-txt" data-section="contact" data-value="msg">Message</label>
           <textarea class="msg-input" name="message" id="msg" required></textarea>
         </div>
 
         <input type="hidden" name="_subject" value="Tu Portafolio!">
         <input type="hidden" name="_template" value="table">
-        <button class="btn-send">
-          Send<img class="btn-send-icon" src="./assets/send.svg" />
+        <button class="btn-send"><p data-section="contact" data-value="btn">Send</p><img class="btn-send-icon" src="./assets/send.svg" />
         </button>
       </form>
     </section>
@@ -279,7 +278,7 @@
         />
       </g>
     </svg>
-    <footer>Design & Built by Román Alvarez</footer>
+    <footer data-section="footer" data-value="title">Design & Built by Román Alvarez</footer>
 
     <script src="app.js"></script>
   </body>
