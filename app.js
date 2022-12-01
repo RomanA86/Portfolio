@@ -1,11 +1,12 @@
 const icon = document.getElementById('icon-light-mode');
 const flagsElement = document.getElementById('flags');
 const textsToChange = document.querySelectorAll('[data-section]');
+const hiddenElements = document.querySelectorAll('.hidden');
+console.log(hiddenElements);
 
 const changeLanguage = async language =>{
     const requestJson = await fetch(`./languages/${language}.json`);
     const texts = await requestJson.json();
-    //console.log(texts)
 
     for (const textToChange of textsToChange) {
         const section = textToChange.dataset.section;
@@ -19,6 +20,7 @@ icon.addEventListener('click', ()=>{
     document.body.classList.toggle('light-mode');
 
     //Guardamos el modo en localstorage
+
     if(document.body.classList.contains('light-mode')){
         localStorage.setItem('light-mode', 'true');
         icon.src = './assets/bxs-moon.svg';
@@ -43,6 +45,7 @@ flagsElement.addEventListener('click',(e)=>{
 });
 
 //Obtenemos el modo actual
+
 if(localStorage.getItem('light-mode') === 'true'){
     document.body.classList.add('light-mode');
     icon.src = './assets/bxs-moon.svg';
@@ -57,3 +60,24 @@ if(localStorage.getItem('language') === 'espaniol') {
 if(localStorage.getItem('language') === 'english') {
     changeLanguage('en');
 }
+
+//Intersection Observer
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+        //  else {
+        //     entry.target.classList.remove('show');
+        // }
+    })
+}
+, {
+    threshold: 0.5
+}
+)
+
+hiddenElements.forEach(el => {
+    observer.observe(el)
+})
