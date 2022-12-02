@@ -235,7 +235,6 @@ nav {
 .home {
   width: 100%;
   scroll-margin-top: 70px;
-  /* border: solid white 2px; */
 }
 
 .home-container {
@@ -243,7 +242,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: calc(100vh - 74px);
+  min-height: calc(100vh - 64px);
   margin: 0 auto;
   gap: 20px;
 }
@@ -355,8 +354,9 @@ nav {
 /* ABOUT (inicio) ---------------------------------------------------- */
 
 #about {
-  scroll-margin-top: 75px;
-  min-height: calc(100vh - 74px);
+  scroll-margin-top: 30px;
+  /* min-height: calc(100vh - 74px); */
+  padding: 50px 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -440,6 +440,7 @@ nav {
 
 #proyects {
   min-height: 100vh;
+  padding-bottom: 50px;
   background-image: url(./assets/proyect-fondo-2.png);
   background-repeat: no-repeat;
   background-position: center top;
@@ -545,6 +546,7 @@ nav {
 /* CONTACT (inicio)  ----------------------------------------------------------------------------------------------*/
 
 #contact {
+  padding-top: 50px;
   padding-bottom: 100px;
   scroll-margin-top: 75px;
 }
