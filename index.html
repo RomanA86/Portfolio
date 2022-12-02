@@ -23,10 +23,10 @@
     <nav>
       <div class="nav-container">
         <div class="flags" id="flags">
-          <div class="flags__item" data-language="es">
+          <div class="flags__item hidden" data-language="es">
             <img src="./assets/flag-arg.svg" class="flags__img" />
           </div>
-          <div class="flags__item" data-language="en">
+          <div class="flags__item hidden" data-language="en">
             <img src="./assets/flag-gb.svg" class="flags__img" />
           </div>
         </div>
@@ -39,21 +39,23 @@
         </label>
 
         <ul class="nav-links">
-          <li><a href="#home" data-section="nav" data-value="home">Home</a></li>
-          <li>
+          <li class="hidden">
+            <a c href="#home" data-section="nav" data-value="home">Home</a>
+          </li>
+          <li class="hidden">
             <a href="#about" data-section="nav" data-value="about">About</a>
           </li>
-          <li>
+          <li class="hidden">
             <a href="#proyects" data-section="nav" data-value="proyects"
               >Proyects</a
             >
           </li>
-          <li>
+          <li class="hidden">
             <a href="#contact" data-section="nav" data-value="contact"
               >Contact</a
             >
           </li>
-          <li class="icon-light-container">
+          <li class="icon-light-container hidden">
             <img src="./assets/bxs-sun.svg" id="icon-light-mode" />
           </li>
         </ul>
@@ -121,10 +123,12 @@
           ipsa tempora in asperiores, iure quia eum ab ex aut provident? Fugiat,
           aliquid vel? Quis, reiciendis dolorum? Lorem ipsum dolor, sit amet
           consectetur adipisicing elit. Voluptate veritatis esse ratione
-          voluptatem excepturi laudantium aperiam 
+          voluptatem excepturi laudantium aperiam
         </p>
 
-        <h2 class="subtitle" data-section="about" data-value="subtitle">Tecnologias que uso</h2>
+        <h2 class="subtitle" data-section="about" data-value="subtitle">
+          Tecnologias que uso
+        </h2>
         <div class="skills">
           <img src="./assets/html.svg" class="skill-icon" />
           <img src="./assets/css.svg" class="skill-icon" />
@@ -136,9 +140,14 @@
     </section>
 
     <section id="proyects">
-      <h1 class="title title-proyect hidden" data-section="proyects" data-value="title">Proyects</h1>
+      <h1
+        class="title title-proyect hidden"
+        data-section="proyects"
+        data-value="title"
+      >
+        Proyects
+      </h1>
       <div class="cards-container">
-
         <div class="card hidden">
           <div class="card-txt">
             <h3 class="card-title">Proyect name</h3>
@@ -196,15 +205,35 @@
     </section>
 
     <section id="contact">
-      <h1 class="title contact-title hidden" data-section="contact" data-value="title">Contact</h1>
-      <p class="contact-description sm-txt hidden" data-section="contact" data-value="subtitle">
-        Get in touch or shoot me an email directly on <a href="mailto:alvarezroman150@gmai.com">alvarezroman150@gmai.com</a>
+      <h1
+        class="title contact-title hidden"
+        data-section="contact"
+        data-value="title"
+      >
+        Contact
+      </h1>
+      <p
+        class="contact-description sm-txt hidden"
+        data-section="contact"
+        data-value="subtitle"
+      >
+        Get in touch or shoot me an email directly on
+        <a href="mailto:alvarezroman150@gmai.com">alvarezroman150@gmai.com</a>
       </p>
 
-      <form action="https://formsubmit.co/alvarezroman150@gmail.com" method="POST" class="hidden">
+      <form
+        action="https://formsubmit.co/alvarezroman150@gmail.com"
+        method="POST"
+      >
         <div class="form-top">
-          <div class="input-group">
-            <label for="name" class="sm-txt" data-section="contact" data-value="name">Name</label>
+          <div class="input-group hidden">
+            <label
+              for="name"
+              class="sm-txt"
+              data-section="contact"
+              data-value="name"
+              >Name</label
+            >
             <input
               name="name"
               type="text"
@@ -214,8 +243,14 @@
             />
             <span class="border-bot"></span>
           </div>
-          <div class="input-group">
-            <label for="name" class="sm-txt" data-section="contact" data-value="email">Email</label>
+          <div class="input-group hidden">
+            <label
+              for="name"
+              class="sm-txt"
+              data-section="contact"
+              data-value="email"
+              >Email</label
+            >
             <input
               name="email"
               type="email"
@@ -226,14 +261,27 @@
             <span class="border-bot"></span>
           </div>
         </div>
-        <div class="input-group">
-          <label for="msg" class="sm-txt" data-section="contact" data-value="msg">Message</label>
-          <textarea class="msg-input" name="message" id="msg" required></textarea>
+        <div class="input-group hidden">
+          <label
+            for="msg"
+            class="sm-txt"
+            data-section="contact"
+            data-value="msg"
+            >Message</label
+          >
+          <textarea
+            class="msg-input"
+            name="message"
+            id="msg"
+            required
+          ></textarea>
         </div>
 
-        <input type="hidden" name="_subject" value="Tu Portafolio!">
-        <input type="hidden" name="_template" value="table">
-        <button class="btn-send"><p data-section="contact" data-value="btn">Send</p><img class="btn-send-icon" src="./assets/send.svg" />
+        <input type="hidden" name="_subject" value="Tu Portafolio!" />
+        <input type="hidden" name="_template" value="table" />
+        <button class="btn-send hidden">
+          <p data-section="contact" data-value="btn">Send</p>
+          <img class="btn-send-icon" src="./assets/send.svg" />
         </button>
       </form>
     </section>
@@ -279,7 +327,9 @@
         />
       </g>
     </svg>
-    <footer data-section="footer" data-value="title">Design & Built by Román Alvarez</footer>
+    <footer data-section="footer" data-value="title">
+      Design & Built by Román Alvarez
+    </footer>
 
     <script src="app.js"></script>
   </body>
