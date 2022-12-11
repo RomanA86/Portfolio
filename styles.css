@@ -80,7 +80,7 @@ nav {
   width: 100%;
   background-color: var(--fondo-navbar);
   color: var(--letras);
-  padding: 20px 0;
+  padding: 23px 0;
   box-shadow: 0px 1px 30px var(--sombra-navbar);
 }
 
@@ -95,13 +95,14 @@ nav {
 
 .flags {
   width: 75px;
+  gap: 3px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .flags__item {
-  width: 30px;
+  width: 33px;
 }
 
 .flags__img {
@@ -153,7 +154,7 @@ nav {
   color: var(--letras);
   font-weight: 400;
   position: relative;
-  font-size: 18px;
+  font-size: 20px;
   text-transform: capitalize;
 }
 
@@ -177,8 +178,10 @@ nav {
 }
 
 .icon-light-container {
-  height: 24px;
+  height: 26px;
+  width: 26px;
 }
+
 
 .label-menu {
   display: none;
@@ -1000,6 +1003,18 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+
+  /* NAVBAR (inicio) ----------------------------------------------------- */
+  .nav-links li a {
+    font-size: 20px;
+  }
+
+  .icon-light-container {
+    width: 25px;
+    height: 25px;
+  }
+  /* NAVBAR (fin) ------------------------------------------------------- */
+
   /* HOME (inicio) ------------------------------------------------------- */
   .home-txt {
     text-align: center;
