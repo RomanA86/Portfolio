@@ -245,7 +245,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: calc(100vh - 64px);
+  min-height: calc(100vh - 72px);
   margin: 0 auto;
   gap: 20px;
 }
@@ -263,11 +263,11 @@ nav {
 }
 
 .home-txt .name {
-  font-size: 140px;
+  font-size: 160px;
 }
 
 .home-txt p {
-  font-size: 25px;
+  font-size: 27px;
   padding-left: 10px;
 }
 
@@ -277,7 +277,7 @@ nav {
 }
 
  .btn-CV {
-  font-size: 20px;
+  font-size: 22px;
   padding: 12px 22px;
   border-radius: 10px;
   border: solid 2px var(--primario);
@@ -308,6 +308,11 @@ nav {
   gap: 15px;
 }
 
+.home-btns a img{
+  width: 45px;
+  height: 45px;
+}
+
 .home-btns a {
   transition: all 200ms ease-in;
 }
@@ -321,13 +326,13 @@ nav {
   transition-delay: 250ms;
   background-color: var(--fondo-navbar);
   border-radius: 35px;
-  padding: 25px 50px;
+  padding: 27px 55px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25),
     inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .code-txt {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
   color: var(--letras);
   font-weight: 400;
@@ -795,7 +800,7 @@ footer {
 
 
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1100px) {
   /* HOME (inicio) ------------------------------------------------------- */
   .home-container {
     flex-direction: column;
@@ -819,6 +824,14 @@ footer {
 
   /* ABOUT (inicio) ------------------------------------------------------- */
 
+  #about {
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .fto-perfil-container {
+    order: 1;
+  }
   .fto-perfil-container {
     width: 320px;
     height: 320px;
@@ -842,36 +855,6 @@ footer {
   /* PROYECT (fin) ------------------------------------------------------- */
 }
 
-@media screen and (max-width: 992px) {
-  /* HOME (inicio) ------------------------------------------------------- */
-  .home-txt .name {
-    font-size: 100px;
-  }
-
-  .home-txt p {
-    font-size: 20px;
-  }
-
-  .home-btns img {
-    width: 35px;
-    height: 35px;
-  }
-  /* HOME (fin) ------------------------------------------------------- */
-
-  /* ABOUT (inicio) ------------------------------------------------------- */
-
-  #about {
-    flex-direction: column;
-    gap: 80px;
-  }
-
-  .fto-perfil-container {
-    order: 1;
-  }
-
-  /* ABOUT (fin) ------------------------------------------------------- */
-}
-
 @media screen and (max-width: 576px) {
   /* NAVBAR (inicio) ----------------------------------------------------- */
   body {
@@ -884,7 +867,7 @@ footer {
 
   .nav-links {
     position: fixed;
-    top: 65px;
+    top: 71px;
     left: 0;
     width: 100%;
     height: 0;
@@ -905,17 +888,17 @@ footer {
   }
 
   #btn-menu:checked ~ .nav-links {
-    height: calc(100vh - 65px);
+    height: calc(100vh - 71px);
   }
   /* NAVBAR (fin)----------------------------------------------------- */
 
   /* HOME (inicio)------------------------------------------------------- */
   .home-txt .name {
-    font-size: 80px;
+    font-size: 100px;
   }
 
   .home-txt p {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .ola {
@@ -924,17 +907,26 @@ footer {
 
   .container-code {
     border-radius: 35px;
-    padding: 20px 45px;
+    padding: 22px 47px;
   }
 
   .code-txt {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.5;
   }
 
   .btn-CV{
     font-size: 16px;
     padding: 10px 20px;
+  }
+
+  .home-btns a img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .btn-CV{
+    font-size: 20px;
   }
   /* HOME (fin) ----------------------------------------------------- */
 
@@ -1016,6 +1008,15 @@ footer {
   /* NAVBAR (fin) ------------------------------------------------------- */
 
   /* HOME (inicio) ------------------------------------------------------- */
+  
+  .home-txt .name {
+    font-size: 80px;
+  }
+
+  .home-txt p {
+    font-size: 18px;
+  }
+  
   .home-txt {
     text-align: center;
     padding: 0 5px;
@@ -1026,7 +1027,7 @@ footer {
   }
 
   .code-txt {
-    font-size: 10px;
+    font-size: 14px;
     line-height: 1.5;
   }
 
@@ -1062,7 +1063,7 @@ footer {
   /*FOOTER (fin)* -------------------------------------*/
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 385px) {
   /* HOME (inicio) ------------------------------------------------------- */
 
   .home-txt .name {
@@ -1080,7 +1081,7 @@ footer {
   }
 
   .code-txt {
-    font-size: 9px;
+    font-size: 12px;
     line-height: 1.5;
   }
   /* HOME (inicio) ------------------------------------------------------- */
@@ -1130,6 +1131,20 @@ footer {
     padding-bottom: 60px;
   }
     /* CONTACT  (fin) ---------------------------------------------------*/
-
-
 }
+
+@media screen and (max-width: 385px){
+/* HOME (inicio) ------------------------------------------------------- */
+
+.container-code {
+  padding: 13px 25px;
+}
+
+.code-txt {
+  font-size: 11px;
+}
+
+/* HOME (fin) ------------------------------------------------------- */
+}
+
+
