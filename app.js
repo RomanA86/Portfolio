@@ -2,7 +2,7 @@ const icon = document.getElementById('icon-light-mode');
 const flagsElement = document.getElementById('flags');
 const textsToChange = document.querySelectorAll('[data-section]');
 const hiddenElements = document.querySelectorAll('.hidden');
-console.log(hiddenElements);
+
 
 const changeLanguage = async language =>{
     const requestJson = await fetch(`./languages/${language}.json`);
