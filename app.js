@@ -2,6 +2,14 @@ const icon = document.getElementById('icon-light-mode');
 const flagsElement = document.getElementById('flags');
 const textsToChange = document.querySelectorAll('[data-section]');
 const hiddenElements = document.querySelectorAll('.hidden');
+const $checkbox = document.getElementById('btn-menu');
+const $navLinks = document.querySelectorAll('.nav-link');
+
+$navLinks.forEach( link =>{
+    link.addEventListener('click', ()=>{
+        $checkbox.checked = false;
+    })
+})
 
 
 const changeLanguage = async language =>{
